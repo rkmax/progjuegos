@@ -17,7 +17,7 @@ all: $(EXECUTABLE)
 $(EXECUTABLE): $(OBJECTS)
 	$(CXX) -o $(BIN_DIR)$(EXECUTABLE) $<
 
-$(OBJ_DIR)%.o: $(SRC_DIR)main.cpp
+$(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
