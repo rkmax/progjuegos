@@ -1,20 +1,24 @@
 # Makefile
 
-TARGET = example
-CC = g++
-CFLAGS = -Wall
+EXECUTABLE = example
+CXXFLAGS = -Wall
 RM = rm -rf
+
+OBJECTS = $(addprefix $(OBJ_DIR), main.o)
+
 OBJ_DIR = obj/
 SRC_DIR = src/
 BIN_DIR = bin/
 
-all: clean $(TARGET)
+.PHONY: clean
 
-$(TARGET): main.o
-	$(CC) -o $(BIN_DIR)example $(OBJ_DIR)main.o
+all: $(EXECUTABLE)
 
-main.o:
-	$(CC) $(CFLAGS) -c $(SRC_DIR)main.cpp -o $(OBJ_DIR)$@
+$(EXECUTABLE): $(OBJECTS)
+	$(CXX) -o $(BIN_DIR)$(EXECUTABLE) $<
+
+$(OBJ_DIR)%.o: $(SRC_DIR)main.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	$(RM) *.o $(OBJ_DIR)*.o $(BIN_DIR)$(TARGET)
+	$(RM) *.o $(OBJ_DIR)*.o $(BIN_DIR)*
