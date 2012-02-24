@@ -1,6 +1,9 @@
 # Makefile
 
-EXECUTABLE = example
+BINARY = example
+
+BUILD = $(addprefix $(BIN_DIR), $(BINARY))
+
 CXXFLAGS = -Wall
 RM = rm -rf
 
@@ -12,10 +15,10 @@ BIN_DIR = bin/
 
 .PHONY: clean
 
-all: $(EXECUTABLE)
+all: clean $(BUILD)
 
-$(EXECUTABLE): $(OBJECTS)
-	$(CXX) -o $(BIN_DIR)$(EXECUTABLE) $<
+$(BUILD): $(OBJECTS)
+	$(CXX) -o $(BUILD) $<
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
