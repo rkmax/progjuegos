@@ -1,3 +1,4 @@
 !*.gitkeep
 /obj/*
 /bin/*
+*.html
