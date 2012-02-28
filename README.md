@@ -45,7 +45,7 @@ independiente de tu distribucion es necesario de un Editor de texto adecuadoo al
 El grupo ha creado un par repositorios en [GitHub.com][2] y [Gitoriuos.org][3]
 
 - [GitHub](https://github.com/rkmax/progjuegos/) mantenido por (Rkmax) Julian Reyes Escrigas
-- [Gitoriuos](https://gitorious.org/progjuegos) mantenido por (Drn) Doris Brage
+- [Gitoriuos](https://gitorious.org/progjuegos) mantenido por (Drn) Dorin Brage
 
 cada persona es libre de clonar estos repositorios y poder contribuir a ellos a traves de algún ejemplo, solo basta con crear una cuenta en alguno de los servicios mencionados.
 
