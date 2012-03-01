@@ -3,6 +3,13 @@ PROGJUEGOS
 
 Este es un repositorio que pretende seguir como base para el desarrollo de juegos. una de las cosas mas importantes antes de poder continuar es asegurarte que tienes un entorno de desarrollo C/C++, la instalación del entorno puede varias dependiendo de su sistema operativo o distribuición (en caso de usar linux).
 
+## Ejemplos del repositorio
+
+-   [Snake](https://github.com/rkmax/snake)
+    > Clon del popular juego Realizado en C++ con SFML
+    > Desarrollado por (Rkmax) Julian Reyes Escrigas
+
+
 ## Instalación librerias básicas de desarrollo
 
 ### Debian / Ubuntu
