@@ -5,9 +5,8 @@ Este es un repositorio que pretende seguir como base para el desarrollo de juego
 
 ## Ejemplos del repositorio
 
--   [Snake](https://github.com/rkmax/snake)
-    > Clon del popular juego Realizado en C++ con SFML
-    > Desarrollado por (Rkmax) Julian Reyes Escrigas
+- [cnake](https://gitorious.org/progjuegos/progjuegos/trees/master/cnake-remake). Desarrollado por Drn
+- [Snake](https://github.com/rkmax/snake). Desarrollado por (Rkmax) Julian Reyes Escrigas
 
 
 ## Instalación librerias básicas de desarrollo
